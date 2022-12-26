@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Rubik+Maze&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&family=Noto+Serif:ital@1&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+::-webkit-scrollbar {
+display: none;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+
+.header{
+	width: 100%;
+	height: 80px;
+	display: block;
+	background-color: #1E1E1E;
+}
+
+.inner_header{
+	width: 1000px;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.LOGO{
+	height: 100%;
+	display: table;
+	float: left;
+
+}
+
+.LOGO h1{
+	color: white;
+	height: 100%;
+	display:table-cell;
+	vertical-align: middle;
+	font-family: 'Aboreto', cursive;
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.LOGO h1 span{
+	font-weight: 800;
+}
+
+.navigation{
+	float: right;
+	height: 100%;
+}
+
+.navigation a{
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0px 20px;
+	text-decoration: none;
+}
+
+.navigation a li{
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-family: 'Aboreto', cursive;
+	font-size: 18px;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	background: url(https://images7.alphac.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: floralwhite;
+}
+
+.bv img{
+	text-align: left;
+	margin-top: 93px;
+	margin-left: 50px;
+	width: 800px;
+	border-radius: 20px;
+}
+
+.bv h1{
+	color: black;
+	text-align: justify-all;
+	margin-top: 25px;
+	font: normal 200px 'Noto Serif', serif;
+	font-size: 40px;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+	margin-left: 50px;
+}
+
+
+.content{
+	height: 520px;
+	width: 935px;
+	border-radius: 20px;
+	overflow: hidden;
+	position: absolute;
+	top: 28%;
+	left: 72%;
+	transform: translate(-50%, -50%);
+	margin-top: 220px;
+}
+
+.navegacao{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	display: flex;
+}
+
+.bar{
+	width: 70px;
+	height: 17px;
+	border: 2px solid #fff;
+	margin: 6px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .6s;
+}
+
+.bar:hover{
+	background-color: #fff;
+}
+
+input{
+	display: none;
+}
+
+.slides{
+	display: flex;
+	width: 500%;
+	height: 100%;
+}
+
+.slide{
+	width: 20%;
+	transition: .6s;	
+}
+
+.slide img{
+	width: 100%;
+	height: 100%;
+}
+
+#slide1:checked ~ .s1{
+	margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+	margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+	margin-left: -40%;
+}
+
+#slide4:checked ~ .s1{
+	margin-left: -60%;
+}
+
+#slide5:checked ~ .s1{
+	margin-left: -80%;
+}
+
+h2{
+  color: hsla(0, 0%, 0%, .9);
+  font: normal 50px Varela Round, sans-serif;
+  height: 140px;
+  left: 0;
+  letter-spacing: 5px;
+  margin: -80px 0 0 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  width: 100%;
+  animation: move linear 2000ms infinite; 
+  margin-top: 740px;
+  text-decoration: underline;
+}
+
+.row::after{
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+.coluna1{
+  float: right;
+  width: 40%;
+  margin-top: 400px;
+  margin-right: 2px;
+  padding: 21px;
+ } 
+
+ .coluna2{
+	float: left;
+	width: 40%;
+	margin-top: 900px;
+	margin-right: 2px;
+	padding: 21px;
+   } 
+
+.coluna3{
+	float: right;
+	width: 40%;
+	margin-top: 300px;
+	margin-right: 2px;
+	padding: 21px;
+   } 
+
+.coluna1 h1{
+  color: hsla(0, 0%, 0%, .9);
+  font: normal 42px Varela Round, sans-serif;
+  text-align: left;
+  text-decoration: underline;
+  margin-top: 20px;
+} 
+
+.coluna2 h1{
+	color: hsla(0, 0%, 0%, .9);
+	font: normal 42px Varela Round, sans-serif;
+	text-align: left;
+	text-decoration: underline;
+	margin-top: 20px;
+  } 
+
+.coluna3 h1{
+	color: hsla(0, 0%, 0%, .9);
+	font: normal 42px Varela Round, sans-serif;
+	text-align: left;
+	text-decoration: underline;
+	margin-top: 20px;
+  } 
+
+.coluna1 img{
+	border-radius: 10px;
+	margin-top: -200px;
+}
+
+.coluna2 img{
+	border-radius: 10px;
+	margin-top: -200px;
+} 
+
+.coluna3 img{
+	border-radius: 10px;
+	margin-top: -200px;
+}  
+
+.coluna1 h3{
+	text-align: justify;
+	margin-top: 40px;
+	font: normal 100px 'Noto Serif', serif;
+	font-size: 20px;
+	margin-bottom: 100px;
+	letter-spacing: 1px; 
+}
+
+.coluna2 h3{
+	text-align: justify;
+	margin-top: 40px;
+	font: normal 100px 'Noto Serif', serif;
+	font-size: 20px;
+	margin-bottom: 100px;
+	letter-spacing: 1px; 
+} 
+
+.coluna3 h3{
+	text-align: justify;
+	margin-top: 40px;
+	font: normal 100px 'Noto Serif', serif;
+	font-size: 20px;
+	margin-bottom: 100px;
+	letter-spacing: 1px; 
+} 
+
+.footer{
+	width: 100%;
+	height: 80px;
+	display: block;
+	background-color: #1E1E1E;
+}
+
+.inner_footer{
+	width: 1000px;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.LOGO{
+	height: 100%;
+	display: table;
+	float: left;
+}
+
+.LOGO h1{
+	color: white;
+	height: 100%;
+	display:table-cell;
+	vertical-align: middle;
+	font-family: 'Aboreto', cursive;
+	font-size: 32px;
+	font-weight: 500;
+	text-decoration: underline;
+
+}
+
+.LOGO h1 span{
+	font-weight: 800;
+}
+
+.navigation{
+	float: right;
+	height: 100%;
+}
+
+.navigation a{
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0px 20px;
+}
+
+.navigation a li{
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-family: 'Aboreto', cursive;
+	font-size: 18px;
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+.contato {
+  padding: 60px;
+  
+  position: relative;
+}
+
+.contato .contato-card {
+  width: 350px;
+  height: 300px;
+  background: #f9f6e1;
+  position: absolute;
+  z-index: 99;
+
+  border-radius: 8px;
+
+  top: calc(50% - 150px);
+  left: calc(20% - 175px);
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.contato .contato-card h1 {
+	font: normal 100px 'Noto Serif', serif;
+	font-size: 25px;
+ 	padding-left: 50px;
+  	text-align: center;
+  	margin-right: 45px;
+}
+
+.contato .contato-card li {
+	font: normal 100px 'Noto Serif', serif;	
+  	text-align: center;
+  	font-size: 15px;
+  	font-weight: bold;
+  	color: black;
+}
+
+.contato .contato-card li svg {
+  width: 16px;
+  margin: 10px;
+}
